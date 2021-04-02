@@ -5,33 +5,3 @@ body .test {
     font-size: 24px;
     font-style: italic;
 }
-
-#output dl {
-    display: flex;
-}
-
-#output dt {
-    width: 35%;
-    padding: 20px;
-    background-color: #DADADA;
-    margin: 0 0 10px 0;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#output dd {
-    width: 65%;
-    padding: 20px;
-    background-color: #F3F3F3;
-    margin: 0 0 10px 0;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-
-.trushImg img{
-    width: 40px;
-    height: 40px;
-}
