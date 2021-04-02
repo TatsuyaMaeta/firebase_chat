@@ -4,36 +4,43 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <title>test</title>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <div class="test">test</div>
-
+        <div class="test">TEST</div>
 
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <!-- 下記2行追記 -->
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
+        https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
-        
+
         <!-- firebaseの設定を読み込み -->
-        <script src="../env/env_firebase_chat/env.js"></script> 
+        <script src="../env/env_firebase_chat/env.js"></script>
+        <script>
+            alert("envファイルの設定を忘れず行ってください");
+        </script>
 
         <script>
             // Your web app's Firebase configuration
             // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-            var firebaseConfig = envfirebaseConfig;
+            var firebaseConfig = envFirebaseConfig; //envFirebaseConfigは別ディレクトリにあるFirebase用のIDなどの情報の変数
+
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
+            // console.log(firebaseConfig);
         </script>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="js/app.js"></script>
-        <script>
-            console.log(firebaseConfig.projectId);
-            console.dir(firebaseConfig);
-        </script>
     </body>
 </html>
+
